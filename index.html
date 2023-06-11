@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="info-bg">
-    <div class="info">
+    <div class="info flex container">
       <p>Seg / Sex - 08:00 ás 18:00</p>
       
       <a href="tel:+552199999999">+55 21 9999-9999</a>
@@ -20,43 +20,47 @@
   </div>
 
   <header class="menu-bg">
-    <div class="menu">
+    <div class="menu flex container">
 
-      <div class="menu-log">
+      <div class="menu-logo">
         <a href="#">FlexBlog</a>
       </div>
       
       <nav> 
-        <ul>
+        <ul class="flex">
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#produtos">Produtos</a></li>
-          <li><a href="#preço">Preço</a></li>
+          <li><a href="#preco">Preço</a></li>
           <li><a href="#qualidade">Qualidade</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <h1 class="introducao">Novos valores e<br>Propriedades de CSS</h1>
+  <h1 class="introducao container">
+    Novos valores e<br>Propriedades de CSS
+  </h1>
 
-  <section id="sobre">
-    <div class="sobre-info">
-      <h1>Sobre</h1>
-      <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente apropriadas objetivos.</p>
-
-      <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente apropriadas objetivos.</p>
-    </div>
+  <section id="sobre" class="container">
+    <h1>Sobre</h1>
+    <div class="sobre flex">
+      <div class="sobre-info">
+        <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente apropriadas objetivos.</p>
   
-    <div class="sobre-imgs">
-      <img src="./img/sobre1.jpg" alt="sobre 1" width="220" height="550">
-      <img src="./img/sobre2.jpg" alt="sobre 2" width="220" height="275">
+        <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente apropriadas objetivos.</p>
+      </div>
+    
+      <div class="sobre-imgs flex">
+        <img src="./img/sobre1.jpg" alt="sobre 1" width="200" height="460">
+        <img src="./img/sobre2.jpg" alt="sobre 2" width="220" height="275">
+      </div>
     </div>
   </section>
 
-  <section id="produtos">
+  <section id="produtos" class="container">
     <h1>Produtos</h1>
 
-    <ul class="produtos-container">
+    <ul class="produtos-container flex">
       <li class="purple">
         <h2>Purple</h2>
         <img src="./img/produtos1.jpg" alt="produto 1" width="600" height="500">
@@ -74,7 +78,7 @@
     </ul>
   </section>
 
-  <section id="preco">
+  <section id="preco" class="flex container">
     <div class="preco-item">
       <h2>Cobre</h2>
       <span><sup>R$</sup>19</span>
@@ -115,7 +119,7 @@
     </div>
   </section>
 
-  <section id="qualidade">
+  <section id="qualidade" class="flex container">
     <div class="qualidade-item">
       <h2>Inteligente</h2>
 
@@ -153,7 +157,7 @@
     </div>
   </section>
 
-  <section class="news-letter">
+  <section class="news-letter flex container">
     <div class="newsletter-info">
       <h1>NewsLetter</h1>
       <p>Assine e fique por dentro das novidades.</p>
@@ -164,10 +168,10 @@
       <button type="submit">Assinar</button>
     </form>
 
-    <footer>
-      <p>FlexBlog © Todos os direitos reservados.</p>
-    </footer>
-    
   </section>
+  
+  <footer class="container">
+    <p>FlexBlog © Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
