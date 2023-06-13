@@ -30,7 +30,6 @@ body{
 .container{
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 
@@ -38,32 +37,42 @@ body{
 .info-bg{
   background: #274ea3;
   color: #fff;
-  padding: 20px 0;
+  padding: 10px 0;
 }
-
 
 .info{
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
+.info p, .info a{
+  padding: 10px 20px;
+}
 /* NAV BAR AREA */
 .menu-bg{
   background: #4774d4;
   color: #fff;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .menu{
   justify-content: space-between;
+  padding: 0;
 }
 
 .menu-logo{
   font-size: 2rem;
   font-weight: 700;
+  flex-wrap: wrap;
 }
 
-.menu li + li{
-  padding-left: 40px;
+.menu-ul{
+  flex-wrap: wrap;
+}
+
+.menu a{
+  display: inline-block;
+  padding: 10px 20px;
 }
 
 .menu a::after{
@@ -78,22 +87,24 @@ body{
   width: 100%;
 }
 
-/* HEADER INTRODUCTION */
+/*INTRODUCTION */
 .introducao{
   position: relative;
   font-size: 3rem;
-  padding: 60px 20px 100px;
+  padding: 60px 20px;
 }
 
-.introducao::after{
-  content: '';
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 2px;
-  background: #4774d4;
-  position: absolute;
-  bottom: 50px;
+/* SOBRE -- INSPIRADO PELO CURSO */
+
+#sobre{
+  padding: 20px 20px;
+  border-top: 2px solid #274ea3;
+  border-bottom: 2px solid #274ea3;
+}
+
+.sobre{
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 #sobre h1{
@@ -101,25 +112,21 @@ body{
   padding-bottom: 24px;
 }
 
-.sobre{
-  gap: 60px;
-  align-items: start;
-}
-
-
 .sobre-info{
-  flex: 1 1 0px;
-  max-width: 70ch;
+  flex: 2 1 450px;
+  align-self: flex-start;
 }
 
 .sobre-info p{
-  font-size: 1.2rem;
-  line-height: 1.5;
-  margin-bottom: 20px;
+  font-size: 1.3rem;
+  line-height: 1.4;
 }
 
-
 .sobre-imgs{
-  flex: 1 1 0px;
-  gap: 20px;
+  flex: 1 1 170px;
+  align-self: flex-start;
+}
+
+.produtos-container{
+  align-items: end;
 }
