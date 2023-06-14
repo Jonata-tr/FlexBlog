@@ -140,7 +140,6 @@ body{
   align-items: end;
   gap: 20px;
   flex-wrap: wrap;
-  max-width: 600px;
 }
 
 .produtos-container li {
