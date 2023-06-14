@@ -127,6 +127,38 @@ body{
   align-self: flex-start;
 }
 
+#produtos{
+  padding: 0 20px;
+}
+
+#produtos h1{
+  font-size: 3rem;
+  padding: 40px 0px 60px;
+}
+
 .produtos-container{
   align-items: end;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.produtos-container li {
+  flex: 1 1 260px;
+}
+
+.produtos-container h2{
+  padding:28px;
+  font-size: 3rem;
+  background: #f0efef;
+  color: #bdbdbd;
+}
+
+.produtos-container .purple{
+  border-top: 6px solid rgb(127, 53, 170);
+}
+.produtos-container .pink{
+  border-top: 6px solid rgb(177, 12, 67);
+}
+.produtos-container .blue{
+  border-top: 6px solid rgb(97, 215, 245);
 }
